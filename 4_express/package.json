@@ -1,0 +1,14 @@
+{
+  "name": "4_express",
+  "version": "1.0.0",
+  "description": "Iniciando o desenvolvimento web com framework express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demétrio Atra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

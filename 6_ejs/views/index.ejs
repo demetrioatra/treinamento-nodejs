@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+    <!-- referência a partir da pasta /public -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Arquivos estáticos -->
+     <img src="/img/guia.png" alt="logo">
+
+    <!-- Variáveis com EJS -->
+    <h2>Variáveis com EJS</h2>
+    <p>Nome: <%= nome %></p>
+    <p>Linguagem: <%= lang %></p>
+    <p>Título: <%= titulo %></p>
+    <p>Avaliações: <%= avaliacoes %></p>
+    
+    <hr>
+
+    <!-- Estrutura de Condição EJS -->
+    <h2>Estrutura de Condição EJS</h2>
+    <% if (msg) { %>
+        <h4>Mensagem é verdadeira</h4>
+    <% } else { %>
+        <h4>Mensagem falsa...</h4>
+    <% } %>
+
+    <hr>
+
+    <!-- Estrutura de Repetição com EJS -->
+    <h2>Estrutura de Repetição com EJS</h2>
+    <% produtos.forEach(function(produto) { %>
+        <p><%= produto.nome %> <%= produto.preco %></p>
+    <% }) %>
+</body>
+</html>
